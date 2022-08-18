@@ -1,0 +1,21 @@
+<%= render "navbar" %>
+
+<div id="banner">
+  Films
+</div>
+
+<h1>My movies</h1>
+
+<ul>
+    <% @movies.each do |movie| %>
+        <li>
+          <%= movie.title %>
+        </li>
+    <% end %>
+</ul>
+
+<div>
+  <div class="d-grid gap-2">
+    <button class="btn btn-success" type="button">Create a Movie List</button>
+  </div>
+</div>
