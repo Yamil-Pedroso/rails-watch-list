@@ -1,1 +1,14 @@
-<h1>Hello List</div>
+<p style="color: green"><%= notice %></p>
+
+<h1>List</h1>
+
+<div id="lists">
+  <% @lists.each do |list| %>
+    <%= render list %>
+    <p>
+      <%= link_to "Show this list", list %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New List Photo", new_list_path %>

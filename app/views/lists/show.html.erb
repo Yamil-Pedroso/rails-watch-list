@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @list %>
+
+<% @list.photos.each do |photo| %>
+  <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
+<% end %>
+
+<div>
+  <%= link_to "Edit this list", edit_list_path(@list) %> |
+  <%= link_to "Back to list", root_path %>
+
+  <%= button_to "Destroy this list", @list, method: :delete %>
+</div>
