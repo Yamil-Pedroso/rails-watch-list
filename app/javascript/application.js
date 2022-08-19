@@ -2,6 +2,3 @@
 import "@hotwired/turbo-rails"
 import "./controllers"
 import "bootstrap";
-
-
-console.log("Hola Mundo!");
